@@ -11,6 +11,7 @@ class Fornecedor extends Model
     
     //Conversão de objeto para registro no banco
     protected $table = 'fornecedores';
+    
     //Autorização para utilizar o método stático create
     protected $fillable = ['nome', 'site', 'uf', 'email'];
 }
