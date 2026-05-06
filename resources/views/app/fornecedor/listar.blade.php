@@ -33,8 +33,8 @@
                                 <td>{{ $fornecedor->site }}</td>
                                 <td>{{ $fornecedor->uf }}</td>
                                 <td>{{ $fornecedor->email }}</td>
-                                <td><button style="width: 100px; background-color: darkred; font-weight: bolder">Excluir</button></td>
-                                <td><button style="width: 100px; background-color: green; font-weight: bolder">Editar</button></td>
+                                <td><a href="">Excluir</a></td>
+                                <td><a href="{{ route('app.fornecedor.editar', $fornecedor->id) }}">Editar</a></td>
                             </tr>                   
                         @endforeach
                     </tbody>
