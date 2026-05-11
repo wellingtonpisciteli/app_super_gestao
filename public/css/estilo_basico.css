@@ -207,3 +207,52 @@
                 border: 1px solid black;
                 padding: 6px;
             }
+
+           .pagination {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 5px;
+                margin-top: 20px;
+            }
+
+            /* todos os itens */
+            .pagination a,
+            .pagination span {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                min-width: 30px;
+                height: 30px;
+
+                padding: 0 8px;
+                font-size: 14px;
+
+                border: 1px solid #ddd;
+                border-radius: 6px;
+
+                text-decoration: none;
+                background: #fff;
+                color: #333;
+                line-height: 1;
+                transition: 0.2s;
+            }
+
+            /* hover */
+            .pagination a:hover {
+                background: #f2f2f2;
+            }
+
+            /* página atual (CORRETO DO LARAVEL) */
+            .pagination span[aria-current="page"] {
+                background: #2a9ee2;
+                color: #fff;
+                border-color: #2a9ee2;
+            }
+
+            /* setas desabilitadas */
+            .pagination span[aria-disabled="true"] {
+                opacity: 0.4;
+                cursor: not-allowed;
+            }
